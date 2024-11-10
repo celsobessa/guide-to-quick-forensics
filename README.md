@@ -1,6 +1,6 @@
-# Introduction
+# Introdução
 
-Often times, members of civil society have the more or less justified suspicion of being surveilled. Perhaps they experienced anomalies with their computers or mobile devices, or they have reasons to believe that some of their communications have been intercepted.
+Frequentemente, membros da sociedade civil têm less justified suspicion of being surveilled. Perhaps they experienced anomalies with their computers or mobile devices, or they have reasons to believe that some of their communications have been intercepted.
 
 Technologists and first responders working in civil society are often requested assistance with the inspection of human rights defenders' devices. The purpose of this guide is to provide an introduction to a methodology that could be useful for the quick assessment of potential infections.
 
