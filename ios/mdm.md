@@ -4,10 +4,10 @@ Mobile Device Management (MDM) is a system commonly used by enterprises to contr
 
 The enrollment normally requires some manual interaction. An infection could happen, for example, if the attackers manage to obtain physical access to device (even for a short time), or by somehow social engineering the victims into enrolling themselves.
 
-Similarly to malicious [iCloud accounts](icloud.md), MDM profiles should be visible in the settings of the device. If an MDM profile is installed on the device, opening "*Settings*", then "*General*", should reveal a "*Profile*" or "*Device Management*" menu option, typically below the "*iTunes Wi-Fi Sync*" and "*VPN*" menu options.
+Similarly to malicious [iCloud accounts](icloud.md), MDM profiles should be visible in the settings of the device. If an MDM profile is installed on the device, opening "_Settings_", then "_General_", should reveal a "_Profile_" or "_Device Management_" menu option, typically below the "_iTunes Wi-Fi Sync_" and "_VPN_" menu options.
 
-![](../img/mdm.png)
+![](../.gitbook/assets/mdm.png)
 
-*Image from BlackBag Technologies*
+_Image from BlackBag Technologies_
 
 If the device owner does not recognize the MDM profile, and if the MDM profile does not appear to belong to an organization or company the device owner works with, it is possible that the device has been compromised.

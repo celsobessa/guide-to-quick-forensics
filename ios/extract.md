@@ -32,7 +32,7 @@ You can then check if the device is correctly connected with the computer with *
 
 You can then do a backup of the system with the command **idevicebackup2 backup -d FOLDER**.
 
-![backup process](../img/backup.png)
+![backup process](../.gitbook/assets/backup.png)
 
 ### Extract Data to a Readable Format
 

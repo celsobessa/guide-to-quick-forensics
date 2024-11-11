@@ -10,13 +10,13 @@ Because regular users typically would not (and should not) install jailbreaks on
 
 During the process of jailbreaking the phone, several applications are often installed, either to jailbreak the phone (like [checkra1n](https://checkra.in/), [unc0ver](https://github.com/pwn20wndstuff/Undecimus) or [Chimera](https://chimera.sh/)) or to install applications (such as [Cydia](https://cydia.saurik.com/) or [Sileo](https://getsileo.app/)). A first step to identify a jailbroken iPhone is to check for one of these apps on the phone :
 
-| App      | Logo                         |
-| -------- | ---------------------------- |
-| Cydia    | ![image](../img/cydia.png)   |
-| Sileo    | ![image](../img/sileo.png)   |
-| unc0ver  | ![image](../img/unc0ver.png) |
-| Chrimera | ![image](../img/chimera.png) |
-| Electra  | ![image](../img/electra.png) |
+| App      | Logo                                     |
+| -------- | ---------------------------------------- |
+| Cydia    | ![image](../.gitbook/assets/cydia.png)   |
+| Sileo    | ![image](../.gitbook/assets/sileo.png)   |
+| unc0ver  | ![image](../.gitbook/assets/unc0ver.png) |
+| Chrimera | ![image](../.gitbook/assets/chimera.png) |
+| Electra  | ![image](../.gitbook/assets/electra.png) |
 
 ## Scan the phone for open ports
 

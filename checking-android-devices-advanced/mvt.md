@@ -20,7 +20,7 @@ In this section, we will explain the types of data gathered by MVT on Android an
 
 ### command.log
 
-`command.log` is the main MVT output. Pay attention on the `WARNING` messages. Many of MVT's automated checks overlaps with the manual checks introduced in [android.md](../android.md "mention"). Such as:
+`command.log` is the main MVT output. Pay attention on the `WARNING` messages. Many of MVT's automated checks overlaps with the manual checks introduced in [android](../android/ "mention"). Such as:
 
 ```
 WARNING - Found suspicious setting "package_verifier_user_consent = -1" (disabled Google Play Protect)

@@ -6,7 +6,7 @@ Some malicious applications are presented as legitimate applications, often bein
 
 ![](../.gitbook/assets/Screenshot\_20220506-170511\_Settings.png)
 
-The application ID should reflect the app's displayed name, for example, the authentic "Play Store" app's ID is `com.android.vending`, however, there are also [malwares](https://www.tomsguide.com/news/octo-android-malware-can-take-over-your-phone-how-to-protect-yourself) pretending to be the Play Store with ID `com.restthe71`.&#x20;
+The application ID should reflect the app's displayed name, for example, the authentic "Play Store" app's ID is `com.android.vending`, however, there are also [malwares](https://www.tomsguide.com/news/octo-android-malware-can-take-over-your-phone-how-to-protect-yourself) pretending to be the Play Store with ID `com.restthe71`.
 
 ### Application version
 
@@ -18,7 +18,7 @@ Even if fake applications were installed, they still need an important number of
 
 To do that, visit **Settings > Applications**
 
-![](../img/android\_apps1.png)
+![](../.gitbook/assets/android\_apps1.png)
 
 This menu is showing you a list of all the applications installed. You should visit the page of each of these applications and check for the permissions allowed for them.
 
@@ -32,7 +32,7 @@ The following permissions are specifically suspicious as they are very regularly
 * Call logs
 * Phone
 
-![](../img/android\_apps2.png)
+![](../.gitbook/assets/android\_apps2.png)
 
 It is also interesting to check other parameters about this app, that may or may not be displayed depending on your version of Android :
 
@@ -47,4 +47,3 @@ To inspect running apps, follow [this guide](https://web.archive.org/web/2022050
 Check unknown running apps by googling their names.
 
 Disable Developer Options after inspecting running apps to prevent leaking information.
-

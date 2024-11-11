@@ -13,7 +13,7 @@ You first need to download AutoMacTC from [the Github repository](https://github
 
 Then you have to launch a terminal, from the menu > `Other` > `Terminal`. To run the program you need to know the path of the extracted AutoMacTC code and run `sudo python <PATH>/automactc-master/automactc.py -m all`.
 
-![](../img/automactc.png)
+![](../.gitbook/assets/automactc.png)
 
 Running this command with the argument `-m all` will extract all the data available. It is also possible to extract more specific data by passing the name of a specific module. Here is the list of modules from [AutoMacTC documentation](https://www.crowdstrike.com/blog/automating-mac-forensic-triage/) :
 

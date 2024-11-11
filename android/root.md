@@ -18,7 +18,7 @@ In the rooting process, important system security features are disabled (such as
 
 When a phone is rooted, the process often involves installing an application to manage root access, most of the time [Magisk](https://github.com/topjohnwu/Magisk) (or [SuperSU](http://www.supersu.com/) on old versions of Android). One first step is to check if the Magisk application is installed. You can check directly for the icon in your main menu, or go to **Settings > Applications** and search the application.
 
-![](../img/supersu.png)
+![](../.gitbook/assets/supersu.png)
 
 ## Check with Root Verifier
 
@@ -26,4 +26,4 @@ Root Verifier is an [open source](https://github.com/abcdjdj/RootVerifier-APP) a
 
 Once installed, you can launch the application. The interface is really simple, you just need to click on "CHECK" and wait for the result.
 
-![](../img/rootverifier1.png) ![](../img/rootverifier2.png)
+![](../.gitbook/assets/rootverifier1.png) ![](../.gitbook/assets/rootverifier2.png)

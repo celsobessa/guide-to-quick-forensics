@@ -8,15 +8,11 @@ Stalkerware applications are installed directly from the application file (APK),
 
 Before Android 8 "Oreo", this feature was enabled for the entire phone. If you have a phone before Android 8, go to **Settings > Security** and check if **Unknown Sources** is enabled.
 
-<center>
-<img src="../img/unknown_sources.png" style="max-width:40%">
-</center>
+![](../.gitbook/assets/unknown\_sources.png)
 
 After Android 8, this feature is enabled per application. Go to **Settings > Security > Install unknown apps** to see the list of applications allowed to install untrusted applications.
 
-<center>
-<img src="../img/unknown_sources2.png" style="max-width:40%">
-</center>
+![](../.gitbook/assets/unknown\_sources2.png)
 
 Any application in this list is suspicious, especially browsers and file managers.
 
@@ -26,9 +22,7 @@ Google Play Protect is an automated detection of malicious applications develope
 
 To check this setting, you should have to go to **Settings > Security > Scan Devices for Security Threats** or **Settings > Security > Google Play Protect** depending on your version of Android.
 
-<center>
-<img src="../img/androidscan.png" style="max-width:40%">
-</center>
+![](../.gitbook/assets/androidscan.png)
 
 ## Check if the Phone is Rooted
 

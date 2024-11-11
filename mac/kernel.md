@@ -6,17 +6,17 @@ Kernel extensions (often called kexts) are programs extending the features of th
 
 To launch KextViewr, download it first from [its official page](https://objective-see.com/products/kextviewr.html). Then extract the program from the archive and double click on it :
 
-![](../img/kextviewer1.png)
+![](../.gitbook/assets/kextviewer1.png)
 
 ## Analyzing Results
 
 ### 1. Verify Image Signatures
 
-Similarly than with other tools, KextViewr displays the signature status with a icon near the name, a green locked icons ![](../img/signedApple.png) means that the extension is signed by Apple, a closed black lock ![](../img/signed.png) means that the extension is signed by another company while an open orange lock ![](../img/unsigned.png) means that the extension is not signed.
+Similarly than with other tools, KextViewr displays the signature status with a icon near the name, a green locked icons ![](../.gitbook/assets/signedApple.png) means that the extension is signed by Apple, a closed black lock ![](../.gitbook/assets/signed.png) means that the extension is signed by another company while an open orange lock ![](../.gitbook/assets/unsigned.png) means that the extension is not signed.
 
 To view only 3rd party kernel extensions, you can uncheck the `Show OS Kexts` checkbox at the bottom of KextViewr window.
 
-![](../img/kextviewer2.png)
+![](../.gitbook/assets/kextviewer2.png)
 
 ### 2. Check Program Names Paths
 
@@ -31,4 +31,3 @@ KextViewr also checks file fingerprint on VirusTotal. On the right of each task 
 You should investigate further any task identified by at least one antivirus as malicious or not known by VirusTotal.
 
 **Please note:** the same considerations and warnings explained in the [previous section](autoruns.md) apply here too. Make sure to read them before proceeding.
-
