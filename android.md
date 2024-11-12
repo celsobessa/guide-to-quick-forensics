@@ -1,5 +1,7 @@
-# Checking Android Devices Basic
+# Verificação básica de dispositivos Android
 
-In this section, we will go through some basic steps to check for malicious activity on an Android device. All steps in this basic section can be completed with built-in system features and existing online tools.
 
-**Warning:** because of their security model and their caracteristics, it is challenging to do live forensic on an Android system. We are bringing here some hints on what to check on a potentially compromised device, but this process is less reliable than the Windows or MacOS processes.
+Nesta seção, examinaremos algumas etapas básicas para verificar se há atividade mal-intencionada em um dispositivo Android. Todas as etapas desta seção básica podem ser concluídas com os recursos integrados do sistema e com as ferramentas on-line existentes.
+
+
+**Aviso:** devido ao modelo de segurança e às características do dispositivo, é um desafio fazer uma análise forense ao vivo em um sistema Android. Estamos trazendo aqui algumas dicas sobre o que verificar em um dispositivo potencialmente comprometido, mas esse processo é menos confiável do que os processos do Windows ou do MacOS.

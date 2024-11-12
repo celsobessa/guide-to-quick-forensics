@@ -1,43 +1,59 @@
 # MVT
 
+
 [Mobile Verification Toolkit (MVT)](https://github.com/mvt-project/mvt) is a collection of utilities to simplify and automate the process of gathering forensic traces helpful to identify a potential compromise of Android and iOS devices.
+
 
 On Android, MVT works mainly by collecting system information using [ADB](https://developer.android.com/studio/command-line/adb).
 
+
 ## Install
+
 
 ```
 pip3 install mvt
 ```
 
+
 ## Running Check
+
 
 `mvt-android check-adb --output <directory>`
 
+
 ## Looking for Indicators in MVT Output
+
 
 In this section, we will explain the types of data gathered by MVT on Android and what indicators to look for.
 
+
 ### command.log
 
+
 `command.log` is the main MVT output. Pay attention on the `WARNING` messages. Many of MVT's automated checks overlaps with the manual checks introduced in [android](../android/ "mention"). Such as:
+
 
 ```
 WARNING - Found suspicious setting "package_verifier_user_consent = -1" (disabled Google Play Protect)
 ```
 
+
 Also, pay attention to "_Found non-system package with name..._", which lists the packages not installed from the Google Play Store.
+
 
 ```
 INFO - Found non-system package with name "tech.httptoolkit.android.v1"       installed by "None" on 2022-06-11 12:36:40
 ```
 
+
 In the above example, a HTTPS interception tool used for debugging is installed by "None" because it was installed manually by opening a APK file in a file browser.
+
 
 When encountering a suspicious app, check the file path and hash in `packages.json`:
 
+
 ```
-    {    
+    {
         "package_name": "tech.httptoolkit.android.v1",
         "file_name": "/data/app/tech.httptoolkit.android.v1-M3BLlBPO_DgoSTQ4yZWWDw==/base.apk",
         "installer": null,
@@ -71,22 +87,32 @@ When encountering a suspicious app, check the file path and hash in `packages.js
     },
 ```
 
+
 Search the package name or file hash on VirusTotal or Koodous platform and read the analysis.
+
 
 ### packages.json
 
+
 As [noted](https://nex.sx/tech/2022/01/28/a-primer-on-android-forensics.html) by MVT's developer:
+
 
 > Walking through this `packages.json` file is an important first step. Prioritize looking at non-system and third-party apps. Look out for any that were disabled (for example, a commercial security app marked as disabled might be a red flag). Search online for package names and hashes of those apps that do not look familiar, have odd names, or might show an unusual _installer_.
 
+
 ### files/
+
 
 In the output folder, there is a `files/`folder, which contains files pulled from `/data/local/tmp` on the phone. This path is often used as a staging area for malwares.
 
+
 Check the file hashes of those files on VirusTotal.
+
 
 ### Other indicators
 
+
 {% embed url="https://nex.sx/tech/2022/01/28/a-primer-on-android-forensics.html" %}
+
 
 {% embed url="https://nex.sx/tech/2022/02/04/diving-deeper-in-android-system-diagnostics.html" %}

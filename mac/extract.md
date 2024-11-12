@@ -1,21 +1,30 @@
 # Extract Data for Further Analysis
 
+
 If you have not found anything suspicious on the system but want to investigate further without the system, it is possible to collect interesting forensic data in order to analyze them later using [AutoMacTC](https://www.crowdstrike.com/blog/automating-mac-forensic-triage/).
 
+
 Important note:
+
 
 * This program can extract some private information (such as browser history), keep that in mind while using it.
 * This program has not been updated since 2021, only supports up to macOS 11.
 
+
 ## Launching AutoMacTC
+
 
 You first need to download AutoMacTC from [the Github repository](https://github.com/CrowdStrike/automactc/archive/master.zip) and extract it.
 
+
 Then you have to launch a terminal, from the menu > `Other` > `Terminal`. To run the program you need to know the path of the extracted AutoMacTC code and run `sudo python <PATH>/automactc-master/automactc.py -m all`.
+
 
 ![](../.gitbook/assets/automactc.png)
 
+
 Running this command with the argument `-m all` will extract all the data available. It is also possible to extract more specific data by passing the name of a specific module. Here is the list of modules from [AutoMacTC documentation](https://www.crowdstrike.com/blog/automating-mac-forensic-triage/) :
+
 
 * pslist : current process list at time of AutoMacTC run
 * lsof : current file handles open at time of AutoMacTC run
@@ -39,6 +48,8 @@ Running this command with the argument `-m all` will extract all the data availa
 * users : listing present and deleted users on the system
 * utmpx : listing user sessions on terminals
 
+
 ## Data Extracted
+
 
 All the data extracted are saved in an archive name `automactc-output,<computername>,<ipaddress>,<date>.tar.gz`. It contains csv files with results for all modules executed.

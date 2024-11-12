@@ -1,23 +1,22 @@
-# Concluding a Forensic Gathering
+# Conclusão de uma coleta forense
+Para concluir uma coleta forense, você deve sempre:
 
-To conclude a forensic gathering, you should always:
+1.Informar o usuário sobre as descobertas
+2.Preservar as evidências
+3. Restaurar o dispositivo ao seu estado original
 
-1. Inform user of the findings
-2. Preserve evidences
-3. Restore the device to its original state
+### Infecções por malware
 
-### Malware infections
+Se forem encontradas infecções por malware em um dispositivo, aplica-se o procedimento usual de_Resposta a incidentes_:
 
-If malware infections were found on a device, the usual _Incident Response_ procedure applies:
+1. Contenção
+2. Erradicação
+3. Recuperação
+4. Lições aprendidas / retenção de evidências
 
-1. Containment
-2. Eradication
-3. Recovery
-4. Lessons learned / evidence retention
+Consulte o [NIST Computer Security Incident Handling Guide] (https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r2.pdf) para obter mais informações.
 
-Refer to [NIST Computer Security Incident Handling Guide](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r2.pdf) for more information.
+O procedimento de resposta a incidentes muda muito dependendo das situações, para dar alguns exemplos:
 
-The incident response procedure changes a lot depending on situations, to give a few examples:
-
-1. An app that steals the user's contacts were installed and used: decide whether leakage of the user's contacts would put anyone in danger. If not, simply remove the app.
-2. A malware that tries to steal other apps' login cookies: change passwords of all login accounts, logout all sessions, login again. If the malware exploit system protections, factory reset the system and install the latest system updates, if the device hardware is out of date, urge user to switch to a new device.
+1. Um aplicativo que rouba os contatos do usuário foi instalado e usado: decida se o vazamento dos contatos do usuário colocaria alguém em perigo. Caso contrário, simplesmente remova o aplicativo.
+2. Um malware que tenta roubar os cookies de login de outros aplicativos: altere as senhas de todas as contas de login, faça logout de todas as sessões e faça login novamente. Se o malware explorar as proteções do sistema, redefina o sistema para a configuração original e instale as atualizações mais recentes do sistema; se o hardware do dispositivo estiver desatualizado, peça ao usuário para trocar por um novo dispositivo.

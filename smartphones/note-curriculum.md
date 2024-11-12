@@ -1,5 +1,6 @@
 # Note: curriculum
 
+
 1. Housekeeping
    1. recording?
 2. Self introductions

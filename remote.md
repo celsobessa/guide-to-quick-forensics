@@ -1,33 +1,35 @@
-# Checking Devices Remotely
+# Verificação remota de dispositivos
 
-In this time of almost worldwide confinement, we are adding here a few steps that may help to check for potentially compromised devices remotely. It includes for now only solutions for Windows and Mac OS computers using [Teamviewer](https://www.teamviewer.com/en/) and [Chrome Remote Desktop](https://remotedesktop.google.com/), as we do not have yet any satisfying solution for smartphones (any suggestion [is welcome](https://github.com/securitywithoutborders/guide-to-quick-forensics/issues)).
+Nesta época de confinamento quase mundial, estamos adicionando aqui algumas etapas que podem ajudar a verificar remotamente os dispositivos potencialmente comprometidos. Por enquanto, elas incluem apenas soluções para computadores Windows e Mac OS usando [Teamviewer](https://www.teamviewer.com/en/) e [Chrome Remote Desktop](https://remotedesktop.google.com/), pois ainda não temos nenhuma solução satisfatória para smartphones (qualquer sugestão [é bem-vinda](https://github.com/securitywithoutborders/guide-to-quick-forensics/issues)).
 
-## Limitations of Remote Forensic
+## Limitações da perícia remota
 
-### The Problem of Trust
+### O problema da confiança
 
-With any remote desktop solution relying on a third party platform, there is an important question of trust. When you install such a remote desktop software, you have to know that the company developing the solution can use the software to access your computer but also can record any interaction you have through their solution. It is thus very important use a solution that you trust based on your threat model.
+Com qualquer solução de área de trabalho remota que dependa de uma plataforma de terceiros, há uma questão importante de confiança. Quando você instala um software de área de trabalho remota desse tipo, precisa saber que a empresa que desenvolve a solução pode usar o software para acessar o seu computador, mas também pode gravar qualquer interação que você tenha por meio da solução. Portanto, é muito importante usar uma solução em que você confie com base em seu modelo de ameaças.
 
-In this guide we use two software :
+Neste guia, usamos dois softwares:
 
-* [Teamviewer](https://www.teamviewer.com/en/) is a developed by TeamViewer AG, a German company based in Göppingen.
-* [Chrome Remote Desktop](https://remotedesktop.google.com/) is developed by Google and is integrated in the Google ecosystem (which requires you to use Google accounts).
+* O [Teamviewer] (https://www.teamviewer.com/en/) foi desenvolvido pela TeamViewer AG, uma empresa alemã com sede em Göppingen.
+* O [Chrome Remote Desktop] (https://remotedesktop.google.com/) foi desenvolvido pelo Google e está integrado ao ecossistema do Google (o que exige o uso de contas do Google).
 
-Teamviewer had several security issues in the past, the FireEye company claimed that it was breached by a [Chinese state-sponsored group in October 2019](https://www.securitynewspaper.com/2019/10/14/fireeye-confirms-that-apt14-group-hacked-teamviewer-attackers-would-have-accessed-billions-of-devices/). We tend to trust more Google for its security, but depending on your threat model, Teamviewer may be a better option. We are using Teamviewer for Windows here because Chrome Remote Desktop does not support well Mac OS yet (no file sharing).
+O Teamviewer teve vários problemas de segurança no passado, a empresa FireEye alegou que foi violado por um [grupo patrocinado pelo Estado chinês em outubro de 2019] (https://www.securitynewspaper.com/2019/10/14/fireeye-confirms-that-apt14-group-hacked-teamviewer-attackers-would-have-accessed-billions-of-devices/). Tendemos a confiar mais no Google por sua segurança, mas, dependendo do seu modelo de ameaças, o Teamviewer pode ser uma opção melhor. Estamos usando o Teamviewer para Windows aqui porque a Área de Trabalho Remota do Chrome ainda não é compatível com o Mac OS (sem compartilhamento de arquivos).
 
-### The Problem of Needing Online Access
+### O problema de precisar de acesso on-line
 
-Another issue with checking devices remotely is that you need the device to have access to Internet. As [explained before](safety.md), this can lead to some risks for the user. If the device is actually compromised and monitored remotely, the operators may identify that the user is receiving technical support and it may cause retaliation against the person you are trying to support.
+Outro problema com a verificação de dispositivos remotamente é que você precisa que o dispositivo tenha acesso à Internet. Como [explicado anteriormente] (safety.md), isso pode levar a alguns riscos para o usuário. Se o dispositivo for realmente comprometido e monitorado remotamente, os operadores poderão identificar que o usuário está recebendo suporte técnico e isso poderá causar retaliação contra a pessoa que você está tentando apoiar.
 
-You should make sure to address that risk before doing any remote support.
+Você deve certificar-se de abordar esse risco antes de prestar qualquer suporte remoto.
 
-## Some Information on the Process
+## Algumas informações sobre o processo
 
-In order to schedule the check of a device remotely, you need to exchange beforehand with the person to let them know that :
+Para agendar a verificação de um dispositivo remotamente, você precisa conversar previamente com a pessoa para informá-la de que:
 
-* They will have to install a remote desktop software before
-* They will have to stay in front of the computer during the check to enter the admin password (a check often last between 30 minutes and an hour)
-* They will have to remove the remote desktop software after
+* Ela terá de instalar um software de área de trabalho remota antes
+* Terá de ficar na frente do computador durante a verificação para inserir a senha de administrador (uma verificação geralmente dura entre 30 minutos e uma hora)
+* Terão de remover o software de área de trabalho remota depois
 
-Please keep in mind that [trust](trust.md) is a key part of any security support, so you should make sure that the process is clear for the person you are supporting and that they consent to it.
+
+Lembre-se de que [trust](trust.md) é uma parte fundamental de qualquer suporte de segurança, portanto, certifique-se de que o processo esteja claro para a pessoa que você está apoiando e que ela consinta com isso.
+
 

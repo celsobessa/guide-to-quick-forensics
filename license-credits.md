@@ -1,8 +1,8 @@
-# License and Credits
+# Licença e créditos
 
-This guide is a collaboration between [Security Without Borders](https://securitywithoutborders.org/) and [Amnesty Tech](https://www.amnesty.org/en/tech/). The authors of this guide are:
+Este guia é uma colaboração entre a [Security Without Borders] (https://securitywithoutborders.org/) e a [Amnesty Tech] (https://www.amnesty.org/en/tech/). Os autores deste guia são:
 
 * [Claudio Guarnieri](https://nex.sx)
 * [Etienne Maynier](https://www.randhome.io/)
 
-This guide is licensed as [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/), you can contribute to this guide [here](https://github.com/pellaeon/guide-to-quick-forensics).
+Este guia está licenciado como [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/), você pode contribuir com este guia [aqui](https://github.com/pellaeon/guide-to-quick-forensics).

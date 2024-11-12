@@ -1,12 +1,12 @@
-# References and Further Learning
+# Referências e aprendizado adicional
 
-This page collects links that I find helpful. Obviously this isn't a comprehensive list to learn everything about forensics.
+Esta página reúne links que considero úteis. Obviamente, esta não é uma lista abrangente para aprender tudo sobre ciência forense.
 
-### Tools
+### Ferramentas
 
 * [https://docs.remnux.org/](https://docs.remnux.org/)
 
-### Books and Guides
+### Livros e guias
 
-* [Field Guide to Incident Response for Civil Society and Media](https://internews.org/resource/field-guide-to-incident-response-for-civil-society-and-media/)
+* [Guia de campo para resposta a incidentes para a sociedade civil e a mídia](https://internews.org/resource/field-guide-to-incident-response-for-civil-society-and-media/)
 * [HackTricks](https://book.hacktricks.xyz/)

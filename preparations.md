@@ -1,6 +1,7 @@
-# Preparations
+# Preparativos
 
-There are many ways to inspect a device and acquire data. There are some initial considerations to make before proceeding. Some of these could be:
-Safety: Is it safe for the owner to proceed? What if we get it wrong? Is the owner at significant risk?
-Backup: Is there a possibility that the triaging would cause loss of data? Are there backups?
-Methodology: Do we think there are opportunities for litigation? If so, is the way we acquire data going to hinder them?
+Há muitas maneiras de inspecionar um dispositivo e obter dados. Há algumas considerações iniciais a serem feitas antes de prosseguir. Algumas delas podem ser:
+
+Segurança: É seguro para o proprietário prosseguir? E se errarmos? O proprietário está correndo um risco significativo?
+Backup: Existe a possibilidade de que a triagem cause perda de dados? Existem backups?
+Metodologia: Achamos que há oportunidades de litígio? Em caso afirmativo, a forma como adquirimos os dados os impedirá?

@@ -1,8 +1,7 @@
-# Knowledge
+# Conhecimento
+Para realizar as verificações deste guia, são necessários os seguintes conhecimentos:
 
-To carry out the checks in this guide, the following knowledge is required:
-
-* What components are in a operating system?
-* Basic familiarity with Linux/macOS command line operations
-* Computer network concepts: IPs, routers, SSL/TLS protocol
-* Using Linux virtual machines
+* Quais são os componentes de um sistema operacional?
+* Familiaridade básica com as operações de linha de comando do Linux/macOS
+* Conceitos de rede de computadores:IPs, roteadores, protocolo SSL/TLS
+* Uso de máquinas virtuais Linux
