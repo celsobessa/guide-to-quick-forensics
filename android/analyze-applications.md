@@ -1,81 +1,67 @@
-# Analyze Applications
+# Aplicativos de análise
+## Aplicativos de verificação e antivírus
+Alguns aplicativos verificam automaticamente os aplicativos instalados no sistema (para ver se eles são conhecidos como mal-intencionados).
 
 
-## Scanner and antivirus apps
-
-
-Some apps automatically check the apps installed on the system (to see if they are known to be malicious).
-
-
-* [Koodous Antivirus](https://play.google.com/store/apps/details?id=com.koodous.android)
+* Koodous Antivirus](https://play.google.com/store/apps/details?id=com.koodous.android)
 * [Lookout](https://play.google.com/store/apps/details?id=com.lookout)
 
 
-These scanner apps work by extracting and uploading the APKs installed on the system to their own platform and comparing the APKs to known malwares. Some device information and potentially other personal information might be uploaded as well, one should check the platforms' privacy policy before installing and scanning with those apps.
+Esses aplicativos de verificação funcionam extraindo e carregando os APKs instalados no sistema para sua própria plataforma e comparando os APKs com malwares conhecidos. Algumas informações do dispositivo e, possivelmente, outras informações pessoais também podem ser carregadas. É preciso verificar a política de privacidade das plataformas antes de instalar e fazer a varredura com esses aplicativos.
 
 
-Alternatively, there is an open-source antivirus application [Hypatia](https://github.com/Divested-Mobile/Hypatia), which utilizes signature databases from ClamAV, ESET and the [targeted threats list made by brotherder](https://github.com/botherder/targetedthreats).&#x20;
+Como alternativa, há um aplicativo antivírus de código aberto [Hypatia](https://github.com/Divested-Mobile/Hypatia), que utiliza bancos de dados de assinaturas do ClamAV, ESET e da [lista de ameaças direcionadas feita pelo brotherder](https://github.com/botherder/targetedthreats).&#x20;
 
 
-These scanner and antivirus apps can only see what other apps are installed, and cannot inspect deep into the operating system, because they themselves are sandboxed. However, medium to highly sophisticated malwares will embed themselves into the system without being shown as an app. These scanner and antivirus apps' knowledge of malwares also depends on their databases, whose sources often come from their enterprise customers. Thus, the scanner apps usually can only find malwares that package themselves as apps (which are usually medium to low sophistication), and are already known. However, these scanners can be installed and operated very easily, therefore they are still useful as a first-line test.
+Esses aplicativos de scanner e antivírus só podem ver quais outros aplicativos estão instalados e não podem inspecionar profundamente o sistema operacional, pois eles próprios estão em sandbox. No entanto, malwares de média a alta sofisticação se incorporam ao sistema sem serem exibidos como um aplicativo. O conhecimento desses aplicativos de scanner e antivírus sobre malwares também depende de seus bancos de dados, cujas fontes geralmente vêm de seus clientes corporativos.Os coprocessadores ajudam o processador de aplicativos principal a lidar com determinadas tarefas e, portanto, precisam se comunicar com ele.Os coprocessadores geralmente executam seu próprio sistema operacional e aplicativo incorporados e não podem ser controlados diretamente pelo usuário.
 
 
-After finishing the check, uninstall the scanner apps to prevent further data collection.
+Os coprocessadores geralmente têm acesso privilegiado aos recursos do sistema e aos dados do usuário, portanto, às vezes, são alvos de explorações mais sofisticadas.
 
 
-## Extract Application Bundles (APKs)
+Devido à natureza bloqueada, é difícil auditar ou obter dados forenses dos coprocessadores.
 
 
-Some tools require you to extract the APK files manually and upload them. Below are some tools that can extract APKs.
+Para os fins deste guia, você só precisará saber que: * Os coprocessadores podem ser explorados
 
 
-* [Apk Extractor](https://play.google.com/store/apps/details?id=com.ext.ui\&hl=zh\_TW)
-* [Apk Extractor (open source, last update in 2018)](https://f-droid.org/packages/axp.tool.apkextractor/)
-* [Kanade](https://github.com/alexrintt/kanade) (open source, last update in 2022)
+* As explorações de coprocessadores são sofisticadas e incomuns
+O restante deste guia se concentrará, portanto, nos softwares executados no processador do aplicativo.
+### Sistema operacional
+Os sistemas operacionais dos smartphones diferem dos sistemas operacionais dos computadores, pois implementam mais controles e isolamento entre os diferentes componentes e aplicativos do sistema, de modo que um componente comprometido não pode afetar facilmente todo o sistema.
+![](https://developer.android.com/guide/platform/images/android-stack\_2x.png)
+É possível que os invasores explorem as vulnerabilidades do kernel, mas essas vulnerabilidades são bastante raras e geralmente exigem técnicas sofisticadas para serem exploradas.
+### Aplicativos do sistema Os aplicativos do sistema podem conter vulnerabilidades.
 
 
-Once an APK is extracted, one can also calculate its file hash (MD5 or SHA), and search for the hash using sites like VirusTotal.com .
+Uma vez explorados, eles podem causar mais danos do que a exploração de aplicativos de usuário, pois geralmente têm mais privilégios para alterar o sistema subjacente.
 
 
-## Online tools
+Um exemplo comum é o navegador incorporado, que é explorado com frequência. ### Aplicativos de usuário
+Os aplicativos de usuário são menos privilegiados.
 
 
-### [Exodus Privacy](https://reports.exodus-privacy.eu.org/en/)
+No entanto, se as permissões forem concedidas, eles podem acessar informações confidenciais do usuário, portanto, ainda podem causar grandes danos.Às vezes, eles também podem enganar ou explorar o sistema subjacente para obter mais controle.
 
 
-Exodus Privacy is a tool for privacy. It can analyze apps and list trackers contained in an app.
+Há uma versão on-line do MobSF disponível em [https://mobsf.live](https://mobsf.live).
 
 
-### [Hybrid-analysis.com](https://www.hybrid-analysis.com/)
+Você também pode [hospedar](https://mobsf.github.io/docs/#/installation) o MobSF por conta própria ou usar serviços de hospedagem gratuitos como o [Play with Docker](https://labs.play-with-docker.com/) para hospedar uma instância privada do MobSF. O Play with Docker fornece 4 horas de tempo de sessão.
 
 
-Hybrid-analysis allows you to upload an APK file to scan. It checks the APK using various antivirus software and VirusTotal.
+## Outras ferramentas
 
 
-### [MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
+Há também outras ferramentas de análise on-line. As listadas abaixo não são especializadas em APK.
 
 
-MobSF decompiles the application and analyze its contents, listing things like URLs, static files, and Activities. These can then be used to motivate further analysis.
-
-
-There is a online version of MobSF available at [https://mobsf.live](https://mobsf.live).
-
-
-You can also [host](https://mobsf.github.io/docs/#/installation) MobSF yourself, or use free hosting services like [Play with Docker](https://labs.play-with-docker.com/) to host a private MobSF instance. Play with Docker provides 4 hours of session time.
-
-
-## Other tools
-
-
-There are also other online analysis tools. The ones listed below are not specialized in APK.
-
-
-* [https://cuckoo.cert.ee/](https://cuckoo.cert.ee/)
+* [https://cuckoo.cert.ee/] (https://cuckoo.cert.ee/)
 * [https://app.any.run/](https://app.any.run/)
 * [https://www.virustotal.com/](https://www.virustotal.com/)
 
 
-## Interpreting Analysis Results
+## Interpretação dos resultados da análise
 
 
-The tools will produce a lot of technical information about the app, interpreting them would require technical understanding of how mobile apps work (such as: what are _content providers, services, activity_). However partial analysis could be achieved by simply checking if the files, URLs, IP addresses contained in the app is already known to be malicious.
+As ferramentas produzirão muitas informações técnicas sobre o aplicativo, e interpretá-las exigiria um conhecimento técnico de como os aplicativos móveis funcionam (por exemplo: o que são _provedores de conteúdo, serviços, atividade_). No entanto, uma análise parcial pode ser obtida simplesmente verificando se os arquivos, URLs e endereços IP contidos no aplicativo já são conhecidos como mal-intencionados.

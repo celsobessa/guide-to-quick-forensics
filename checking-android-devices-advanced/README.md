@@ -1,4 +1,3 @@
-# Checking Android Devices Advanced
+# Verificando dispositivos Android Avançado
 
-
-This section requires installation and setup of complex tools. Familiarity with Linux command line is required.
+Esta seção requer instalação e configuração de ferramentas complexas. É necessária familiaridade com a linha de comando do Linux.

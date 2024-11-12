@@ -1,50 +1,50 @@
-# Smartphone System Architecture
+# Arquitetura do sistema do smartphone
 
 
-Smartphones are basically small handheld computers, the major architectural distinction from computers are:
+Os smartphones são basicamente pequenos computadores de mão, e as principais diferenças arquitetônicas em relação aos computadores são:
 
 
-* Systems being more locked down:
-  * Non-customizable bootloaders
-* Addition of special purpose co-processors
-  * Secure enclave
-  * Baseband
-  * Image-processing
-  * AI acceleration
+* Os sistemas são mais bloqueados:
+  * Carregadores de inicialização não personalizáveis
+* Adição de coprocessadores para fins especiais
+  * Enclave seguro
+  * Banda base
+  * Processamento de imagens
+  * Aceleração de IA
 
 
-### Co-processors
+### Co-processadores
 
 
-Co-processors are processors used only for a particular purpose other than the system. The co-processors helps the main _application processor_ to handle certain tasks, thus have to communicate with it. Co-processors often run their own embedded operating system and application and could not be directly controlled by the user. Co-processors often has privileged access to system resources and user data, so they are sometimes targets of more sophisticated exploitations. Due to the locked-down nature, it is difficult to audit or obtain forensic data from co-processors. For the purpose of this guide, you will only need to know that:
+Os coprocessadores são processadores usados somente para uma finalidade específica que não seja o sistema. Os coprocessadores ajudam o processador de aplicativos principal a lidar com determinadas tarefas e, portanto, precisam se comunicar com ele. Os coprocessadores geralmente executam seu próprio sistema operacional e aplicativo incorporados e não podem ser controlados diretamente pelo usuário. Os coprocessadores geralmente têm acesso privilegiado aos recursos do sistema e aos dados do usuário, portanto, às vezes, são alvos de explorações mais sofisticadas. Devido à natureza bloqueada, é difícil auditar ou obter dados forenses dos coprocessadores. Para os fins deste guia, você só precisará saber que:
 
 
-* Co-processors can be exploited
-* Co-processor exploits are sophisticated and uncommon
+* Os coprocessadores podem ser explorados
+* As explorações de coprocessadores são sofisticadas e incomuns
 
 
-The rest of this guide will thus focus on the softwares running on the application processor.
+O restante deste guia se concentrará, portanto, nos softwares executados no processador do aplicativo.
 
 
-### Operating System
+### Sistema operacional
 
 
-Smartphone operating systems differ from computer operating systems in that they implement more controls and isolation between different system components and applications, so that a compromised component could not easily affect the whole system.
+Os sistemas operacionais dos smartphones diferem dos sistemas operacionais dos computadores, pois implementam mais controles e isolamento entre os diferentes componentes e aplicativos do sistema, de modo que um componente comprometido não pode afetar facilmente todo o sistema.
 
 
 ![](https://developer.android.com/guide/platform/images/android-stack\_2x.png)
 
 
-It is possible for attackers to exploit kernel vulnerabilities, however these vulnerabilities are quite rare and usually requires sophisticated techniques to exploit.
+É possível que os invasores explorem as vulnerabilidades do kernel, mas essas vulnerabilidades são bastante raras e geralmente exigem técnicas sofisticadas para serem exploradas.
 
 
-### System Applications
+### Aplicativos do sistema
 
 
-System applications may contain vulnerabilities. Once exploited, they can cause greater harm than exploiting user applications, because they usually have more privilege to change the underlying system. One common example is the built-in browser, which is often exploited.
+Os aplicativos do sistema podem conter vulnerabilidades. Uma vez explorados, eles podem causar mais danos do que a exploração de aplicativos de usuário, pois geralmente têm mais privilégios para alterar o sistema subjacente. Um exemplo comum é o navegador incorporado, que é explorado com frequência.
 
 
-### User Applications
+### Aplicativos de usuário
 
 
-User applications are least privileged. However, if the permissions are granted, they can access sensitive user information, so they can still cause great harm. They can also sometimes trick or exploit the underlying system to gain more control.
+Os aplicativos de usuário são menos privilegiados. No entanto, se as permissões forem concedidas, eles podem acessar informações confidenciais do usuário, portanto, ainda podem causar grandes danos. Às vezes, eles também podem enganar ou explorar o sistema subjacente para obter mais controle.

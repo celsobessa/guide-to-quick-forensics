@@ -1,7 +1,9 @@
-# Checking Smartphones
+# Verificação de smartphones
 
 
-In this section, we will go through a few steps that are generic to all types of smartphones, please consider that they are complementary to the sections on [Android](../android/) and [iOS](../ios/) you can find later in this guide.
+
+Nesta seção, passaremos por algumas etapas que são genéricas para todos os tipos de smartphones; considere que elas são complementares às seções sobre [Android](../android/) e [iOS](../ios/) que você pode encontrar mais adiante neste guia.
 
 
-**Warning:** because of their security model and their caracteristics, it is challenging to do live forensic on a smartphone. We are bringing here some hints on what to check on a potentially compromised device, but this process is less reliable than the Windows or MacOS processes.
+
+**Aviso:** devido ao seu modelo de segurança e às suas características, é um desafio fazer perícia ao vivo em um smartphone. Trazemos aqui algumas dicas sobre o que verificar em um dispositivo potencialmente comprometido, mas esse processo é menos confiável do que os processos do Windows ou do MacOS.
