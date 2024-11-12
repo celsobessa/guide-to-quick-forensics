@@ -1,6 +1,5 @@
 # Table of contents
 
-
 * [Introdução](README.md)
 * [Preparations](preparations/README.md)
   * [Knowledge](preparations/knowledge.md)
@@ -27,7 +26,7 @@
   * [Check for Suspicious Messages](smartphones/check-for-suspicious-messages.md)
   * [Monitor Network Traffic](smartphones/network.md)
   * [Note: Monitoring Network Traffic on Linux](smartphones/note-monitoring-network-traffic-on-linux.md)
-* [Checking Android Devices Basic](android/README.md)
+* [Verificação básica de dispositivos Android](android/README.md)
   * [Review Installed Applications](android/applications.md)
   * [Check Storage](android/check-storage.md)
   * [Check if the Phone is under Android Device Policy](android/check-if-the-phone-is-under-android-device-policy.md)
